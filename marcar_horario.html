@@ -1,0 +1,39 @@
+<?php
+$nameNome = isset($_GET['nameNome']) ? $_GET['nameNome'] : null;
+$nameEmail = isset($_GET['nameEmail']) ? $_GET['nameEmail'] : null;
+$nameSexo = isset($_GET['nameSexo']) ? $_GET['nameSexo'] : null;
+$nameNascimento = isset($_GET['nameNascimento']) ? $_GET['nameNascimento'] : null;
+
+$nameLogradouro = isset($_GET['nameLogradouro']) ? $_GET['nameLogradouro'] : null;
+$nameNumero = isset($_GET['nameNumero']) ? $_GET['nameNumero'] : null;
+$nameCidade = isset($_GET['nameCidade']) ? $_GET['nameCidade'] : null;
+$nameUF = isset($_GET['nameUF']) ? $_GET['nameUF'] : null;
+
+$nameMarcadoDia = isset($_GET['nameMarcadoDia']) ? $_GET['nameMarcadoDia'] : null;
+$nameMarcadoHora = isset($_GET['nameMarcadoHora']) ? $_GET['nameMarcadoHora'] : null;
+$nameTipo = isset($_GET['nameTipo']) ? $_GET['nameTipo'] : null;
+
+$nameObs = isset($_GET['nameObs']) ? $_GET['nameObs'] : null;
+
+
+$escrita = "Oi $nameNome ($nameSexo - $nameEmail - $nameNascimento )"
+        . ", seu endereço é ( $nameLogradouro, $nameNumero, $nameCidade, $nameUF). "
+        . "Seu horário foi agendado para dia $nameMarcadoDia as $nameMarcadoHora, a massagem  será:"
+        . " $nameTipo. (Observação: $nameObs)";
+//echo "$escrita";
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO suNascimentopply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <select name="d">
+            <option></option>
+            <option></option>
+        </select>
+        
+    </body>
+</html>
